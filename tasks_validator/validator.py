@@ -30,7 +30,8 @@ class TasksValidator(object):
     def __init__(self, tasks, version):
         self.version = version
         self.tasks = tasks
-        self.graph = graph.DeploymentGraph(tasks)
+        self.graph = graph.DeploymentGraph()
+        self.graph.add_tasks(self.tasks)
 
     def validate_schema(self):
         '''Validate tasks schema
