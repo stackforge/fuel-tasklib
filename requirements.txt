@@ -2,3 +2,4 @@ networkx>=1.8
 jsonschema>=2.3.0
 PyYAML>=3.11
 argparse>=1.2.1
+ordereddict>=1.1
