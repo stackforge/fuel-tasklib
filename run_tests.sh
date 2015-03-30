@@ -39,7 +39,7 @@ check_tox() {
 
 usage() {
   echo "Usage: $0 [OPTIONS] [-- TESTR OPTIONS]"
-  echo "Run Python tests for fuel-tasks-validator"
+  echo "Run Python tests for fuel-tasklib"
   echo ""
   echo "  -p, --pep8           Run only flake8 checks."
   echo "  -P, --no-pep8        Do not run flake8 tests"
@@ -107,7 +107,7 @@ run_flake8() {
 run_tests() {
   echo "Starting Python tests..."
 
-  local tests="${ROOT}/tasks_validator/tests"
+  local tests="${ROOT}/tasklib/tests"
 
   if [[ ${#certain_tests[@]} -ne 0 ]]; then
     tests=${certain_tests[@]}

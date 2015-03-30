@@ -1,5 +1,5 @@
-fuel-tasks-validator
-====================
+fuel-tasklib
+============
 
 Project resources
 -----------------
@@ -17,7 +17,7 @@ http://docs.mirantis.com
 Any additional information can be found on the Fuel's project wiki:
 https://wiki.openstack.org/wiki/Fuel
 
-Anyone wishing to contribute to fuel-tasks-validator should follow the general
+Anyone wishing to contribute to fuel-tasklib follow the general
 OpenStack process. A good reference for it can be found here:
 
 * https://wiki.openstack.org/wiki/How_To_Contribute

@@ -24,8 +24,8 @@ import os
 import sys
 import yaml
 
-from tasks_validator import graph
-from tasks_validator.schemas import VERSIONS_SCHEMAS_MAP
+from tasklib import graph
+from tasklib.schemas import VERSIONS_SCHEMAS_MAP
 
 logging.basicConfig(level=logging.ERROR)
 LOG = logging.getLogger(__name__)
