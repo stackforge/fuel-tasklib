@@ -20,7 +20,7 @@ import mock
 
 from unittest2.case import TestCase
 
-from tasks_validator import validator
+from tasklib import validator
 
 
 TASKS = [
@@ -113,8 +113,8 @@ class TestValidatorClient(TestCase):
             pass
         self.assertEqual(pars_error[0], 2)
 
-    @mock.patch('tasks_validator.validator.get_tasks')
-    @mock.patch('tasks_validator.validator.TasksValidator')
+    @mock.patch('tasklib.validator.get_tasks')
+    @mock.patch('tasklib.validator.TasksValidator')
     def test_passing_params(self, mock_validator, mock_file):
         mock_file.return_value = TASKS
         args = ['/usr/local/bin/tasks-validator', '-d',

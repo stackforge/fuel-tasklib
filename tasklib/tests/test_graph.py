@@ -15,7 +15,7 @@
 
 from unittest2.case import TestCase
 
-from tasks_validator import graph
+from tasklib import graph
 
 
 class TestGraphs(TestCase):
